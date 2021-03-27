@@ -1,0 +1,25 @@
+{
+  "name": "@invntrm/gaude-mon",
+  "version": "1.0.0",
+  "description": "[private] Show water/electricity meters for landlords (node.js port)",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/a-x-/gaude-mon-node.git"
+  },
+  "author": "alex mextner <invntrm@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^2.19.0",
+    "express": "^4.17.0"
+  },
+  "bugs": {
+    "url": "https://github.com/a-x-/gaude-mon-node/issues"
+  },
+  "homepage": "https://github.com/a-x-/gaude-mon-node#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}
