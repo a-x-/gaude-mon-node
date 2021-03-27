@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM arm32v7/node:alpine
 
 # The port that your application listens to.
 EXPOSE 8080
