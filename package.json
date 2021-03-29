@@ -20,7 +20,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docker": "npm version patch && docker build . -t mxtnr/gaude-mon:${node -p 'require(\"./package.json\").version'} -t mxtnr/gaude-mon:latest && docker push mxtnr/gaude-mon"
+    "docker": "npm version patch && docker build . -t mxtnr/gaude-mon:`node -p 'require(\"./package.json\").version'` -t mxtnr/gaude-mon:latest && docker push mxtnr/gaude-mon"
   },
   "private": true
 }
