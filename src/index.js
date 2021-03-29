@@ -45,6 +45,18 @@ app
   });
 
 //
+// Init data
+//
+const HA_ORIGIN = "https://invntrm.ru:8812";
+const headers = { Authorization: `Bearer ${process.env.HA_TOKEN}`, "Content-Type": "application/json" };
+fetch(`${HA_ORIGIN}/api/states/sensor.water_hot`, { headers })
+  .then((res) => res.json())
+  .then((res) => (store.hot = parseFloat(res.state)));
+fetch(`${HA_ORIGIN}/api/states/sensor.water_cold`, { headers })
+  .then((res) => res.json())
+  .then((res) => (store.cld = parseFloat(res.state)));
+
+//
 //
 //
 

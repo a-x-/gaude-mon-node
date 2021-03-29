@@ -105,7 +105,6 @@ dist
 
 # Project related
 static/water.html
-.store.json
 
 # Macos
 .DS_Store
