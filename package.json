@@ -1,6 +1,6 @@
 {
   "name": "@invntrm/gaude-mon",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "[private] Show water/electricity meters for landlords (node.js port)",
   "main": "src/index.js",
   "repository": {
@@ -19,7 +19,8 @@
   "homepage": "https://github.com/a-x-/gaude-mon-node#readme",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker": "npm version patch && docker build . -t mxtnr/gaude-mon:${node -p 'require(\"./package.json\").version'} -t mxtnr/gaude-mon:latest && docker push mxtnr/gaude-mon"
   },
   "private": true
 }
